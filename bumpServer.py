@@ -38,5 +38,5 @@ def bumpServer(token, channelID, message):
     print(f'{Fore.CYAN}[INFO] {Style.RESET_ALL}Sent {message} to {str(channelID)} with {token}')
     
 for key, value in accts.items():
-    set_interval(functools.partial(bumpServer, key, value, 'test'), 10)
+    set_interval(functools.partial(bumpServer, key, value, '!d bump'), 10)
     print(f"{Fore.CYAN}[INFO] {Style.RESET_ALL}Beginning messaging with {key} on {value} \n")
