@@ -11,8 +11,6 @@ init()
 with open('info.json') as f:
     accts = json.load(f)
 
-
-
 def set_interval(func, sec):
     def func_wrapper():
         set_interval(func, sec)
